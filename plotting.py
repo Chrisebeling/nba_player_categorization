@@ -104,7 +104,11 @@ def show_summary(pickle_data):
     display_summary = cluster_summary.copy()
     for column in pct_columns:
         display_summary[column] = display_summary[column].map('{:.2f}'.format)
-    return display_summary
+    
+    if 'cluster_rank' in display_summary.columns:
+        return display_summary.drop('cluster_rank', axis=1)
+    else:
+        return display_summary
 
 def plot_player(player, final_data, cluster_summary, close_min_max):
     name_column = 'last_name' if len(player.split(' ')) == 1 else 'first_last'
