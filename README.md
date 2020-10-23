@@ -1,7 +1,7 @@
 For ready to go notebook demonstrating analysis use this link: 
 https://mybinder.org/v2/gh/Chrisebeling/nba_player_categorization/40c288c7a714f6ae0b3a72da72e630e52a025132?filepath=Player%20Categorization.ipynb
 
-Analysis
+## Analysis
 - Clustering analysis (K Means) of NBA statistics since 1983
 - Two separate models are run: career and single season performance
 - Average stats across the time period for each player are used as the factors, with equal weighting
